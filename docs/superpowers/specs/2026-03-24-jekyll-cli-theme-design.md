@@ -73,7 +73,7 @@ DHSI_DH_AI_2026/
 - A `[light]` / `[dark]` text button in the header styled like a CLI flag
 - Persists to `localStorage`
 - Implemented via `data-theme` attribute on `<html>` with CSS custom properties
-- Defaults to dark; respects `prefers-color-scheme` on first visit
+- Precedence: `localStorage` → `prefers-color-scheme` → dark fallback
 
 ## Accordion Sections
 
@@ -117,7 +117,7 @@ $ course --description                                  [-]
 
 - `<summary>` styled as monospace prompt line in amber, with dotted leader fill and `[+]`/`[-]` indicator
 - Expanded content has a left border pipe (`│`) in muted color to mimic terminal output
-- Smooth height animation via CSS transition
+- Smooth height animation via JS in `main.js` (native `<details>` doesn't animate with CSS alone; no-JS fallback still opens/closes correctly)
 - Readings render as indented lists with blue link styling
 - Exercises use `>` blockquote style (like a terminal comment)
 
@@ -153,7 +153,7 @@ $ echo $CREDITS
 - Links:
   - "Anastasia Salter" → https://anastasiasalter.net
   - "John T. Murray" → https://jtm.io/
-  - Repo link → GitHub repository URL
+  - Repo link → https://github.com/amsucf/DHSI_DH_AI_2026
   - "distantcoding.ai" → https://distantcoding.ai
 
 ## Jekyll Configuration
@@ -179,6 +179,7 @@ exclude:
 
 ## Content Approach
 
+- Source: `dhsi-2026-course-packet.md` (repo root) → restructured as `index.md`
 - `index.md` uses `default` layout via front matter
 - Markdown content restructured with `<details>`/`<summary>` blocks
 - Standard markdown (lists, links, blockquotes) renders inside details via kramdown
@@ -187,6 +188,7 @@ exclude:
 ## Responsive Design
 
 - Max content width: ~48rem
+- Mobile breakpoint: 768px
 - Mobile: mascot scales down, stacks above title
 - Accordion prompt leaders truncate on small screens
 - Font size steps down slightly on mobile, stays monospace throughout
