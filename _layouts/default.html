@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='8' y='2' width='16' height='4' fill='%23c8b6ff'/><rect x='4' y='6' width='24' height='4' fill='%23c8b6ff'/><rect x='6' y='6' width='4' height='4' fill='%237ec8e3'/><rect x='22' y='6' width='4' height='4' fill='%237ec8e3'/><rect x='4' y='10' width='24' height='4' fill='%23c8b6ff'/><rect x='4' y='14' width='24' height='4' fill='%23c8b6ff'/><rect x='6' y='18' width='20' height='4' fill='%23c8b6ff'/><rect x='10' y='22' width='4' height='4' fill='%23c8b6ff'/><rect x='18' y='22' width='4' height='4' fill='%23c8b6ff'/><rect x='8' y='26' width='4' height='4' fill='%23c8b6ff'/><rect x='20' y='26' width='4' height='4' fill='%23c8b6ff'/></svg>">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+  <div class="site-container">
+    {% include header.html %}
+    <main class="site-content">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+  </div>
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>
