@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<details class="accordion-section">
+<details class="accordion-section" open>
 <summary>
   <span class="prompt-text">$ course --description</span>
   <span class="leader"></span>
@@ -28,6 +28,8 @@ No prior programming experience is required—but bring curiosity, a laptop with
 - **Claude Pro subscription** — Required for full access to Artifacts, Code Web, and Claude Code CLI. Sign up at [claude.ai](https://claude.ai).
 - **GitHub account** — Use a .edu email if possible for GitHub Education benefits. Create one at [github.com](https://github.com).
 - **Visual Studio Code** — Install from [code.visualstudio.com](https://code.visualstudio.com).
+- **Git** — Install from [git-scm.com](https://git-scm.com). Required for version control in agentic workflows.
+- **GitHub Desktop** (optional) — A visual Git client if you prefer not to use the command line. Install from [desktop.github.com](https://desktop.github.com).
 - **Claude Code CLI** — We will walk through installation on Day 2, but you can get started early by following [the setup guide](https://docs.anthropic.com/en/docs/claude-code).
 - **Administrative laptop access** — You will need to install software during the workshop.
 
@@ -185,6 +187,7 @@ Complete these before the first session. They provide the conceptual framework w
 - What is MCP? The "USB-C for AI" — connecting Claude to external tools and data
 - The MCP ecosystem: servers, clients, and the community registry
 - Demo: connecting Claude Code to GitHub, a file system, and a web browser via MCP
+- The Zotero MCP: connecting your reference library directly to Claude for citation-aware workflows
 - The Hugging Face MCP: accessing open-source models from within Claude Code
 - Demo: using the Hugging Face MCP to find and deploy a transcription model (Whisper) for archival audio
 - Discussion: what data sources and tools matter for your research?
