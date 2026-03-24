@@ -1,0 +1,13 @@
+title: "DHSI 2026: DH Programming Pedagogy in the Age of AI"
+description: "Course packet for DH Programming Pedagogy in the Age of AI"
+baseurl: "/DHSI_DH_AI_2026"
+markdown: kramdown
+sass:
+  style: compressed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .superpowers
+  - docs/
+  - dhsi-2026-course-packet.md
