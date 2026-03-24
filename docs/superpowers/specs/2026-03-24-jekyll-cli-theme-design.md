@@ -171,6 +171,7 @@ exclude:
   - README.md
   - .superpowers
   - docs/
+  - dhsi-2026-course-packet.md
 ```
 
 - No plugins beyond GitHub Pages defaults
