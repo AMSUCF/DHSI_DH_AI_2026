@@ -1,0 +1,20 @@
+:root {
+  --bg: #191724;
+  --text: #c3dafe;
+  --prompt: #d4a574;
+  --output: #7ec8e3;
+  --accent: #c8b6ff;
+  --muted: rgba(195, 218, 254, 0.15);
+  --code-bg: #1e1b2e;
+  --font-mono: 'Courier New', Courier, monospace;
+}
+
+[data-theme="light"] {
+  --bg: #f8f9fa;
+  --text: #2d3748;
+  --prompt: #b8734a;
+  --output: #2b6cb0;
+  --accent: #6b46c1;
+  --muted: rgba(45, 55, 72, 0.15);
+  --code-bg: #edf2f7;
+}
