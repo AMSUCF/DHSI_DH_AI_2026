@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:dhsi.org)",
+      "WebSearch",
+      "WebFetch(domain:ftrain.com)",
+      "WebFetch(domain:slate.com)",
+      "WebFetch(domain:aboard.com)"
+    ]
+  }
+}

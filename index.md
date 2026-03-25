@@ -49,7 +49,7 @@ Complete these before the first session. They provide the conceptual framework w
 - Martin, Meredith. "Command Lines for the Humanities." *PMLA* 139.3 (2024): 541–547.
 - Mitchell, Melanie. ["On Evaluating Cognitive Capabilities in Machines (and Other 'Alien' Intelligences)."](https://aiguide.substack.com/p/on-evaluating-cognitive-capabilities) *AI: A Guide for Thinking Humans*. January 14, 2026.
 - Benjamin, Ruha. ["The New Artificial Intelligentsia."](https://lareviewofbooks.org/article/the-new-artificial-intelligentsia/) *Los Angeles Review of Books*. October 18, 2024.
-- Ford, Paul. ["The A.I. Disruption We've Been Waiting For Has Arrived."](https://aboard.com/my-new-york-times-op-ed-on-vibe-coding/) *The New York Times*. February 18, 2026.
+- Ford, Paul. ["Timing My Vibe Coding."](https://ftrain.com/aboard-podcast-timing-my-vibe-coding) *The Aboard Podcast*. July 29, 2025.
 - Willison, Simon. ["Not All AI-Assisted Programming is Vibe Coding (But Vibe Coding Rocks)."](https://simonwillison.net/2025/Mar/19/vibe-coding/) *simonwillison.net*. March 19, 2025.
 - Noble, Safiya Umoja. ["Algorithms Aren't Neutral: Safiya Noble on AI, Bias, and Building Public-Interest Technology."](https://calearninglab.org/myrobotteacher/mrt6/) *My Robot Teacher* podcast. California Education Learning Lab. 2025. (Transcript available on [Substack](https://calearninglab.substack.com/s/my-robot-teacher-podcast).)
 
@@ -194,14 +194,13 @@ Complete these before the first session. They provide the conceptual framework w
 
 **Exercise:** Configure at least one MCP server with your Claude Code installation. Use the Hugging Face MCP to identify a small model relevant to your research (transcription, OCR, classification, translation). Build a simple pipeline that integrates it.
 
-**Wednesday PM:** Free
 
 </div>
 </details>
 
 <details class="accordion-section">
 <summary>
-  <span class="prompt-text">$ day-4 --am</span>
+  <span class="prompt-text">$ day-3 --pm</span>
   <span class="leader"></span>
   <span class="indicator"><span class="plus">[+]</span><span class="minus">[-]</span></span>
 </summary>
@@ -229,7 +228,7 @@ Complete these before the first session. They provide the conceptual framework w
 
 <details class="accordion-section">
 <summary>
-  <span class="prompt-text">$ day-4 --pm</span>
+  <span class="prompt-text">$ day-4 --am</span>
   <span class="leader"></span>
   <span class="indicator"><span class="plus">[+]</span><span class="minus">[-]</span></span>
 </summary>
@@ -256,7 +255,7 @@ Complete these before the first session. They provide the conceptual framework w
 
 <details class="accordion-section">
 <summary>
-  <span class="prompt-text">$ day-5 --am</span>
+  <span class="prompt-text">$ day-4 --pm</span>
   <span class="leader"></span>
   <span class="indicator"><span class="plus">[+]</span><span class="minus">[-]</span></span>
 </summary>
@@ -281,7 +280,7 @@ Complete these before the first session. They provide the conceptual framework w
 
 <details class="accordion-section">
 <summary>
-  <span class="prompt-text">$ day-5 --pm</span>
+  <span class="prompt-text">$ day-5 --am</span>
   <span class="leader"></span>
   <span class="indicator"><span class="plus">[+]</span><span class="minus">[-]</span></span>
 </summary>
@@ -300,6 +299,8 @@ Complete these before the first session. They provide the conceptual framework w
 - Resources for continuing: communities, documentation, and next steps
 
 **Deliverable:** A working tool with either local model or MCP integration, deployed or shareable, accompanied by a brief reflection on the process of building it.
+
+**Friday PM:** Free
 
 </div>
 </details>
