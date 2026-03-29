@@ -31,6 +31,7 @@ No prior programming experience is required—but bring curiosity, a laptop with
 - **Git** — Install from [git-scm.com](https://git-scm.com). Required for version control in agentic workflows.
 - **GitHub Desktop** (optional) — A visual Git client if you prefer not to use the command line. Install from [desktop.github.com](https://desktop.github.com).
 - **Claude Code CLI** — We will walk through installation on Day 2, but you can get started early by following [the setup guide](https://docs.anthropic.com/en/docs/claude-code).
+- **Ollama** — For running local models. Install from [ollama.com](https://ollama.com). We will configure it on Day 2, but having it installed in advance saves time.
 - **Administrative laptop access** — You will need to install software during the workshop.
 
 </div>
@@ -122,20 +123,18 @@ Complete these before the first session. They provide the conceptual framework w
 **Readings:**
 
 - Willison, Simon. ["Writing Code Is Cheap Now"](https://simonwillison.net/guides/agentic-engineering-patterns/) (Chapter from *Agentic Engineering Patterns*).
-- Willison, Simon. ["Using Git with Coding Agents."](https://simonwillison.net/guides/agentic-engineering-patterns/) (Chapter from *Agentic Engineering Patterns*).
+- Babich, Nick. ["7 Essential Claude Code Slash Commands."](https://uxplanet.org/7-advanced-claude-code-slash-commands-db4c9be3e38c) *UX Planet*. March 2026.
 
 **Topics:**
 
 - Installing and configuring Claude Code CLI
 - The terminal as creative workspace: navigating the command line for humanists
 - Running terminal commands from within Claude: how the agent executes bash, installs packages, and interacts with your file system — and when to let it vs. when to intervene
-- Slash commands: built-in commands (`/help`, `/init`, `/clear`, `/compact`) and how they structure your workflow ([Claude Code CLI reference](https://docs.anthropic.com/en/docs/claude-code); see also Babich, Nick. ["7 Essential Claude Code Slash Commands."](https://uxplanet.org/7-advanced-claude-code-slash-commands-db4c9be3e38c) *UX Planet*. March 2026.)
+- Slash commands: built-in commands (`/help`, `/init`, `/clear`, `/compact`) and how they structure your workflow ([Claude Code CLI reference](https://docs.anthropic.com/en/docs/claude-code))
 - Building a custom slash command: creating `.claude/commands/` files as reusable prompt templates for your own research workflows ([Custom slash commands guide](https://code.claude.com/docs/en/skills))
-- Context engineering: CLAUDE.md files, project memory, and teaching the agent about your work
-- Git basics for agentic workflows: why version control matters more, not less, with AI
 - Demo: setting up a project from scratch with Claude Code, including writing a custom slash command
 
-**Exercise:** Initialize a new project with Claude Code. Write a CLAUDE.md file that describes your research domain and goals. Create a custom slash command for a task you repeat often (e.g., `/analyze-text`, `/format-citations`, `/summarize-source`). Use Claude Code to scaffold a basic tool.
+**Exercise:** Initialize a new project with Claude Code. Create a custom slash command for a task you repeat often (e.g., `/analyze-text`, `/format-citations`, `/summarize-source`). Use Claude Code to scaffold a basic tool.
 
 </div>
 </details>
@@ -147,22 +146,25 @@ Complete these before the first session. They provide the conceptual framework w
   <span class="indicator"><span class="plus">[+]</span><span class="minus">[-]</span></span>
 </summary>
 <div class="accordion-content" markdown="1">
-<span class="session-title">Session 4: Red/Green TDD and Agentic Patterns</span>
+<span class="session-title">Session 4: Context Engineering and Local Models</span>
 
 **Readings:**
 
-- Willison, Simon. ["Red/Green TDD"](https://simonwillison.net/guides/agentic-engineering-patterns/) (Chapter from *Agentic Engineering Patterns*).
+- Willison, Simon. ["Using Git with Coding Agents."](https://simonwillison.net/guides/agentic-engineering-patterns/) (Chapter from *Agentic Engineering Patterns*).
 - Willison, Simon. ["Hoard Things You Know How to Do."](https://simonwillison.net/guides/agentic-engineering-patterns/) (Chapter from *Agentic Engineering Patterns*).
+- Willison, Simon (with Grace Huckins). ["How to Run an LLM on Your Laptop."](https://simonwillison.net/2025/Jul/18/how-to-run-an-llm-on-your-laptop/) *MIT Technology Review*. July 17, 2025.
 
 **Topics:**
 
-- Test-driven development as a conversation with your agent: write a test, let the agent pass it
-- Why TDD works better with agents than without them
-- Subagents and parallel work: how Claude Code delegates
-- Practical patterns: when to intervene, when to let the agent run
-- Demo: building a text processing tool using red/green TDD
+- Context engineering: CLAUDE.md files, project memory, and teaching the agent about your work
+- Git basics for agentic workflows: why version control matters more, not less, with AI
+- Why local models? Privacy, cost, offline access, and running specialized tasks without the cloud
+- Installing and configuring Ollama: pulling models, understanding model sizes and hardware requirements
+- Connecting Ollama to Claude Code: using `ollama launch claude` and environment variable configuration ([Ollama integration guide](https://docs.ollama.com/integrations/claude-code))
+- When to use local vs. cloud models: the tradeoffs for humanities researchers
+- Demo: setting up Ollama, running a local model, and connecting it to Claude Code for a text analysis task
 
-**Exercise:** Write three tests that describe what you want your tool to do. Let Claude Code implement the code to pass them. Iterate.
+**Exercise:** Write a CLAUDE.md file that describes your research domain and goals. Install Ollama and pull a small model (e.g., Llama 3.2 3B or Qwen 3). Connect it to Claude Code and compare the experience of working with a local model vs. Claude for a simple task.
 
 </div>
 </details>
@@ -214,7 +216,7 @@ Complete these before the first session. They provide the conceptual framework w
 
 **Topics:**
 
-- The Superpowers framework: Brainstorm → Spec → Plan → TDD → Subagent Development → Review → Finalize
+- The Superpowers framework: Brainstorm → Spec → Plan → Subagent Development → Review → Finalize
 - Installing and configuring the Superpowers plugin
 - The /brainstorm command: Socratic dialogue before code
 - Subagent-driven development: dispatching parallel tasks with built-in review
@@ -320,6 +322,13 @@ Complete these before the first session. They provide the conceptual framework w
 - Anthropic. [Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code)
 - Anthropic. [MCP Documentation](https://docs.anthropic.com/en/docs/build-with-claude/mcp)
 - Anthropic. [Skilljar: Introduction to Model Context Protocol](https://anthropic.skilljar.com/introduction-to-model-context-protocol) (free course)
+
+#### Local Models and Ollama
+
+- Ollama. [Quickstart Guide](https://docs.ollama.com/quickstart)
+- Ollama. [Claude Code Integration](https://docs.ollama.com/integrations/claude-code)
+- Ollama. ["ollama launch."](https://ollama.com/blog/launch) *Ollama Blog*. January 23, 2026.
+- Willison, Simon (with Grace Huckins). ["How to Run an LLM on Your Laptop."](https://simonwillison.net/2025/Jul/18/how-to-run-an-llm-on-your-laptop/) *MIT Technology Review*. July 17, 2025.
 
 #### Hugging Face and Open Models
 
