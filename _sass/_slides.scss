@@ -1,35 +1,70 @@
-// Intro slide deck — terminal-styled presentation for the Monday AM introduction.
-// Reuses the shared palette/variables; presents one slide at a time with keyboard nav.
+// Intro slide deck — full-page, terminal-styled presentation for the Monday AM
+// introduction. Each slide fills the viewport; the image is the dominant element
+// with its caption beneath it and the framing text above.
 
-.deck {
-  max-width: 56rem;
-  margin: 0 auto;
+.slides-body {
+  height: 100vh;
+  overflow: hidden;
 }
 
-.deck-intro {
-  margin-bottom: 1.5rem;
+.deck {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+// Top bar: prompt label on the left, exit + theme toggle on the right.
+.deck-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.6rem 1.25rem;
+  border-bottom: 1px solid var(--muted);
+  flex-shrink: 0;
+  font-size: 0.85rem;
 
   .deck-prompt {
     color: var(--prompt);
   }
 
-  .deck-lede {
-    color: var(--text);
-    opacity: 0.85;
-    margin: 0.25rem 0 0;
+  .deck-bar-right {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .deck-exit {
+    color: var(--output);
+    font-size: 0.8rem;
+  }
+
+  .theme-toggle {
+    position: static;
+    margin: 0;
   }
 }
 
-// A single slide rendered as a terminal "window".
+// The area that holds the slides; one is shown at a time and fills it.
+.slide-stage {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+}
+
 .slide {
   display: none;
-  border: 1px solid var(--muted);
-  border-radius: 6px;
-  background-color: var(--code-bg);
-  overflow: hidden;
+  flex: 1;
+  min-height: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1rem;
+  padding: 1.5rem 2rem;
+  text-align: center;
 
   &.is-active {
-    display: block;
+    display: flex;
     animation: slide-fade 0.25s ease;
   }
 }
@@ -39,84 +74,78 @@
   to   { opacity: 1; transform: translateY(0); }
 }
 
-.slide-titlebar {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 0.55rem 0.9rem;
-  border-bottom: 1px solid var(--muted);
-  font-size: 0.8rem;
-  color: var(--prompt);
-
-  .slide-dots {
-    display: flex;
-    gap: 0.4rem;
-
-    span {
-      width: 0.7rem;
-      height: 0.7rem;
-      border-radius: 50%;
-      background-color: var(--muted);
-      display: inline-block;
-    }
-    span:first-child { background-color: var(--prompt); }
-  }
-
-  .slide-cmd {
-    white-space: nowrap;
-  }
-}
-
-.slide-body {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  padding: 1.5rem;
-  align-items: center;
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
-}
-
+// Framing text sits above the image and stays compact.
 .slide-text {
-  font-size: 1.05rem;
-  line-height: 1.7;
+  flex-shrink: 0;
+  max-width: 60rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
   color: var(--text);
 
   &::before {
     content: '> ';
     color: var(--prompt);
   }
+
+  @media (max-width: 768px) {
+    font-size: 0.95rem;
+  }
 }
 
+// Figure grows to fill remaining height; the image is the largest component.
 .slide-figure {
   margin: 0;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+}
 
-  .slide-image {
-    width: 100%;
-    height: auto;
-    border: 1px solid var(--muted);
-    border-radius: 4px;
-    display: block;
-  }
+.slide-image-slot {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  .slide-caption {
-    margin-top: 0.5rem;
-    font-size: 0.78rem;
-    color: var(--accent);
-    opacity: 0.85;
-    text-align: center;
+  a {
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
   }
 }
 
-// Navigation row beneath the deck.
+.slide-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border: 1px solid var(--muted);
+  border-radius: 4px;
+}
+
+.slide-caption {
+  flex-shrink: 0;
+  font-size: 0.85rem;
+  color: var(--accent);
+  opacity: 0.9;
+}
+
+// Bottom navigation bar.
 .deck-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  margin-top: 1.25rem;
+  padding: 0.75rem 1.25rem;
+  border-top: 1px solid var(--muted);
+  flex-shrink: 0;
 
   button {
     font-family: var(--font-mono);
@@ -145,14 +174,5 @@
     opacity: 0.7;
     font-size: 0.85rem;
     white-space: nowrap;
-  }
-}
-
-.deck-back {
-  margin-top: 2rem;
-  font-size: 0.85rem;
-
-  .prompt-text {
-    color: var(--prompt);
   }
 }
