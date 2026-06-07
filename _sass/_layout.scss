@@ -83,6 +83,29 @@
   margin: 2rem 0;
 }
 
+// Standalone content/demo pages (e.g. the distant-reading exercise).
+.page-prompt {
+  color: var(--prompt);
+  font-size: 0.85rem;
+  margin: 0 0 0.5rem;
+}
+
+.page-lead {
+  color: var(--text);
+  opacity: 0.9;
+}
+
+.page-back {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--muted);
+  font-size: 0.85rem;
+
+  .prompt-text {
+    color: var(--prompt);
+  }
+}
+
 .site-footer {
   border-top: 1px solid var(--muted);
   padding-top: 1.5rem;
