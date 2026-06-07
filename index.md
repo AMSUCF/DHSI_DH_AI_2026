@@ -66,6 +66,8 @@ Complete these before the first session. They provide the conceptual framework w
 <div class="accordion-content" markdown="1">
 <span class="session-title">Session 1: Positioning and Prototyping with Artifacts</span>
 
+**Slides:** [Introduction — Pragmatic Agentic AI in the Digital Humanities]({{ '/intro.html' | relative_url }})
+
 **Readings:**
 
 - Mollick, Ethan. ["Claude Code and What Comes Next."](https://www.oneusefulthing.org/p/claude-code-and-what-comes-next) *One Useful Thing*. January 7, 2026.

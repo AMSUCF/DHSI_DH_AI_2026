@@ -1,0 +1,158 @@
+// Intro slide deck — terminal-styled presentation for the Monday AM introduction.
+// Reuses the shared palette/variables; presents one slide at a time with keyboard nav.
+
+.deck {
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.deck-intro {
+  margin-bottom: 1.5rem;
+
+  .deck-prompt {
+    color: var(--prompt);
+  }
+
+  .deck-lede {
+    color: var(--text);
+    opacity: 0.85;
+    margin: 0.25rem 0 0;
+  }
+}
+
+// A single slide rendered as a terminal "window".
+.slide {
+  display: none;
+  border: 1px solid var(--muted);
+  border-radius: 6px;
+  background-color: var(--code-bg);
+  overflow: hidden;
+
+  &.is-active {
+    display: block;
+    animation: slide-fade 0.25s ease;
+  }
+}
+
+@keyframes slide-fade {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.slide-titlebar {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.55rem 0.9rem;
+  border-bottom: 1px solid var(--muted);
+  font-size: 0.8rem;
+  color: var(--prompt);
+
+  .slide-dots {
+    display: flex;
+    gap: 0.4rem;
+
+    span {
+      width: 0.7rem;
+      height: 0.7rem;
+      border-radius: 50%;
+      background-color: var(--muted);
+      display: inline-block;
+    }
+    span:first-child { background-color: var(--prompt); }
+  }
+
+  .slide-cmd {
+    white-space: nowrap;
+  }
+}
+
+.slide-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.slide-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text);
+
+  &::before {
+    content: '> ';
+    color: var(--prompt);
+  }
+}
+
+.slide-figure {
+  margin: 0;
+
+  .slide-image {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--muted);
+    border-radius: 4px;
+    display: block;
+  }
+
+  .slide-caption {
+    margin-top: 0.5rem;
+    font-size: 0.78rem;
+    color: var(--accent);
+    opacity: 0.85;
+    text-align: center;
+  }
+}
+
+// Navigation row beneath the deck.
+.deck-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.25rem;
+
+  button {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    background: none;
+    border: 1px solid var(--muted);
+    border-radius: 4px;
+    color: var(--prompt);
+    cursor: pointer;
+    padding: 0.4rem 0.9rem;
+    transition: color 0.2s ease, border-color 0.2s ease;
+
+    &:hover:not(:disabled) {
+      color: var(--output);
+      border-color: var(--output);
+    }
+
+    &:disabled {
+      opacity: 0.35;
+      cursor: default;
+    }
+  }
+
+  .deck-counter {
+    color: var(--text);
+    opacity: 0.7;
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+}
+
+.deck-back {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+
+  .prompt-text {
+    color: var(--prompt);
+  }
+}
