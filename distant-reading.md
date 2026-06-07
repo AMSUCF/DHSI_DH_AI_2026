@@ -93,6 +93,7 @@ Ask Claude to generate **Artifacts** that visualize the findings. We will produc
 **Suggested reading:**
 
 - Underwood, Ted. ["A Genealogy of Distant Reading."](https://dhq.digitalhumanities.org/vol/11/2/000317/000317.html) *Digital Humanities Quarterly* 11.2 (2017).
+- Walsh, Melanie, and Maria Antoniak. ["The Goodreads 'Classics': A Computational Study of Readers, Amazon, and Crowdsourced Amateur Criticism."](https://post45.org/2021/04/the-goodreads-classics-a-computational-study-of-readers-amazon-and-crowdsourced-amateur-criticism/) *Post45* 7 (2021).
 
 **Sample assignment:**
 
