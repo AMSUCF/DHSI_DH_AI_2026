@@ -98,6 +98,12 @@ Complete these before the first session. They provide the conceptual framework w
 <div class="accordion-content" markdown="1">
 <span class="session-title">Session 2: Claude Code Web — Beyond the Chat Window</span>
 
+**Demos:**
+
+- [Distant Coding: A Recommendation System with Artifacts]({{ '/distant-coding.html' | relative_url }})
+- [Coding AI Interfaces with Claude]({{ '/ai-interfaces.html' | relative_url }})
+- [Deploying to GitHub Pages with Claude Code for Web]({{ '/deploying-github-pages.html' | relative_url }})
+
 **Readings:**
 
 - Willison, Simon. ["Beyond Vibe Coding."](https://simonwillison.net/2025/Sep/4/beyond-vibe-coding/) *simonwillison.net*. September 4, 2025.
