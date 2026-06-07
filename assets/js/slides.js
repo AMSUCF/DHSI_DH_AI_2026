@@ -38,5 +38,23 @@
     else if (e.key === 'ArrowRight' || e.key === ' ') { go(1); }
   });
 
+  // Touch: a horizontal swipe advances (left) or rewinds (right) a slide.
+  var startX = null, startY = null;
+  deck.addEventListener('touchstart', function(e) {
+    var t = e.changedTouches[0];
+    startX = t.clientX;
+    startY = t.clientY;
+  }, { passive: true });
+  deck.addEventListener('touchend', function(e) {
+    if (startX === null) return;
+    var t = e.changedTouches[0];
+    var dx = t.clientX - startX;
+    var dy = t.clientY - startY;
+    startX = startY = null;
+    // Ignore taps and mostly-vertical drags; only act on clear horizontal swipes.
+    if (Math.abs(dx) < 40 || Math.abs(dx) <= Math.abs(dy)) return;
+    go(dx < 0 ? 1 : -1);
+  }, { passive: true });
+
   render();
 })();
