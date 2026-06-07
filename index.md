@@ -81,10 +81,10 @@ Complete these before the first session. They provide the conceptual framework w
 - Welcome and introductions: who's in the room, what do you want to build?
 - The agentic coding spectrum: vibe coding → distant coding → agentic engineering
 - Willison's framework: what changes when code is cheap to write?
-- Hands-on: Claude Artifacts for rapid prototyping — building a text analysis tool, a quiz, or a timeline in the browser without leaving the chat
-- Discussion: what can Artifacts do, and where do they hit a wall?
+- Hands-on: distant reading with Claude Projects and Artifacts — moving a small corpus through a stopword → bag-of-words → key phrases → network → comparative pipeline and visualizing the findings ([Distant Reading with Claude Projects]({{ '/distant-reading.html' | relative_url }}))
+- Discussion: what does the distant view reveal, where does it hit a wall, and where does Claude get it wrong?
 
-**Exercise:** Build a small interactive artifact relevant to your research or teaching. Share it with the group. We'll revisit this project on Day 5.
+**Exercise:** Work through the [Distant Reading with Claude Projects]({{ '/distant-reading.html' | relative_url }}) demo with a *different* set of texts of your own, using Claude Projects and Artifacts. Generate at least five visualizations, and document one place Claude got it wrong.
 
 </div>
 </details>
