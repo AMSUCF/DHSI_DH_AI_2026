@@ -112,11 +112,12 @@ Complete these before the first session. They provide the conceptual framework w
 **Topics:**
 
 - From Artifacts to Code Web: when you need files, persistence, and real deployment
-- Working in Code Web: projects, file management, GitHub integration
-- Demo: building a multi-page GitHub Pages site from a research project
+- The progression we'll demo: a prompt-built Artifact → an AI-powered app → a version-controlled site on GitHub Pages
+- Walking the three demos above: distant coding, AI interfaces, and deploying with Claude Code for Web
+- Agentic development: plan mode, `/init`, and iterating with an agent that edits real files
 - Discussion: the spectrum from chat to code — when do you need each tool?
 
-**Exercise:** Take the artifact you built this morning and rebuild or extend it in Code Web. Deploy it to GitHub Pages.
+**Final exercise:** [Agentic Code with Claude Code for Web]({{ '/final-exercise.html' | relative_url }}) — on your own, plan, build, and deploy an ambitious public-facing site to GitHub Pages, working agentically with Claude Code (plan mode → iterate → deploy).
 
 </div>
 </details>
