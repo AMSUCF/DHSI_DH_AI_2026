@@ -96,7 +96,7 @@ Complete these before the first session. They provide the conceptual framework w
   <span class="indicator"><span class="plus">[+]</span><span class="minus">[-]</span></span>
 </summary>
 <div class="accordion-content" markdown="1">
-<span class="session-title">Session 2: Claude Code Web — Beyond the Chat Window</span>
+<span class="session-title">Session 2: From Artifacts to Claude Code Web and GitHub Pages</span>
 
 **Demos:**
 
