@@ -104,6 +104,8 @@ Complete these before the first session. They provide the conceptual framework w
 - [Coding AI Interfaces with Claude]({{ '/ai-interfaces.html' | relative_url }})
 - [Deploying to GitHub Pages with Claude Code for Web]({{ '/deploying-github-pages.html' | relative_url }})
 
+**Session recap:** [Day 1 PM Recap — From Artifacts to Claude Code Web and GitHub Pages]({{ '/day1-pm-recap.html' | relative_url }})
+
 **Readings:**
 
 - Willison, Simon. ["Beyond Vibe Coding."](https://simonwillison.net/2025/Sep/4/beyond-vibe-coding/) *simonwillison.net*. September 4, 2025.
