@@ -7,12 +7,27 @@
     cursor: pointer;
     font-family: var(--font-mono);
     color: var(--prompt);
-    padding: 0.5rem 0;
+    padding: 0.6rem 0.85rem;
     list-style: none;
     user-select: none;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    background-color: var(--surface);
+    transition: border-color 0.2s ease, background-color 0.2s ease;
 
     &::-webkit-details-marker {
       display: none;
+    }
+
+    &:hover {
+      border-color: var(--output);
+      background-color: var(--surface-hover);
+    }
+
+    // Visible keyboard-focus ring for accessibility.
+    &:focus-visible {
+      outline: 2px solid var(--output);
+      outline-offset: 2px;
     }
 
     .prompt-text {
@@ -30,11 +45,20 @@
       }
     }
 
+    // Boxed, full-opacity [+]/[-] so it reads clearly as a control.
     .indicator {
       white-space: nowrap;
-      color: var(--text);
-      opacity: 0.5;
+      color: var(--accent);
+      font-weight: bold;
+      border: 1px solid var(--accent);
+      border-radius: 3px;
+      padding: 0.05rem 0.4rem;
     }
+  }
+
+  &[open] > summary {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   &[open] > summary .indicator {
@@ -48,9 +72,12 @@
   }
 
   .accordion-content {
-    border-left: 2px solid var(--muted);
-    margin-left: 0.75rem;
-    padding: 0.75rem 0 0.75rem 1.25rem;
+    border: 1px solid var(--border);
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: 0;
+    padding: 0.75rem 1.25rem;
     overflow: hidden;
 
     h4 {
@@ -70,6 +97,6 @@
     font-size: 0.9rem;
     margin-bottom: 0.75rem;
     padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--muted);
+    border-bottom: 1px solid var(--border);
   }
 }

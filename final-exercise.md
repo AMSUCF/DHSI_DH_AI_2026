@@ -3,11 +3,11 @@ layout: default
 title: "Final Exercise: Agentic Code with Claude Code for Web"
 ---
 
-<p class="page-prompt">$ day-1 --pm · final exercise</p>
+<p class="page-prompt">$ day-2 --am · opening exercise</p>
 
 ## Final Exercise: Agentic Code with Claude Code for Web
 
-<p class="page-lead" markdown="1">The capstone of the day. The three demos walked from a prompt-built Artifact to an AI-powered app to a deployed GitHub Pages site—now do it on your own, agentically. Using Claude Code for Web, plan, build, and deploy an ambitious public-facing website, paying attention to where the agent helps and where it needs your direction.</p>
+<p class="page-lead" markdown="1">The capstone of Day 1, picked up to open Day 2. The Day 1 PM demos walked from a prompt-built Artifact to an AI-powered app to a deployed GitHub Pages site—now do it on your own, agentically. Using Claude Code for Web, plan, build, and deploy an ambitious public-facing website, paying attention to where the agent helps and where it needs your direction.</p>
 
 <details class="accordion-section" open>
 <summary>

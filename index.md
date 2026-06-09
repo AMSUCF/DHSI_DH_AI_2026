@@ -117,7 +117,7 @@ Complete these before the first session. They provide the conceptual framework w
 - Agentic development: plan mode, `/init`, and iterating with an agent that edits real files
 - Discussion: the spectrum from chat to code — when do you need each tool?
 
-**Final exercise:** [Agentic Code with Claude Code for Web]({{ '/final-exercise.html' | relative_url }}) — on your own, plan, build, and deploy an ambitious public-facing site to GitHub Pages, working agentically with Claude Code (plan mode → iterate → deploy).
+The capstone exercise that builds on these demos — [Agentic Code with Claude Code for Web]({{ '/final-exercise.html' | relative_url }}) — opens Day 2, so we can pick it up fresh with full time to plan, build, and deploy.
 
 </div>
 </details>
@@ -131,21 +131,28 @@ Complete these before the first session. They provide the conceptual framework w
 <div class="accordion-content" markdown="1">
 <span class="session-title">Session 3: Claude Code CLI — Setup and First Principles</span>
 
+**Opening exercise:** We begin Day 2 by completing the Day 1 capstone we didn't reach — [Agentic Code with Claude Code for Web]({{ '/final-exercise.html' | relative_url }}). On your own, plan, build, and deploy an ambitious public-facing site to GitHub Pages, working agentically with Claude Code (plan mode → iterate → deploy). Then we move to the CLI.
+
 **Readings:**
 
 - Willison, Simon. ["Writing Code Is Cheap Now"](https://simonwillison.net/guides/agentic-engineering-patterns/) (Chapter from *Agentic Engineering Patterns*).
 - Babich, Nick. ["7 Essential Claude Code Slash Commands."](https://uxplanet.org/7-advanced-claude-code-slash-commands-db4c9be3e38c) *UX Planet*. March 2026.
 
+**Demos:**
+
+- [Distant Coding with Claude Code (UMKC)](https://anastasiasalter.net/DistantCodingUMKC/) — a collection of sample exercises to draw from as we move to the CLI
+- [Image Metadata with Claude Code]({{ '/image-metadata.html' | relative_url }}) — analyzing, describing, renaming, and presenting a set of images from the terminal
+
 **Topics:**
 
 - Installing and configuring Claude Code CLI
 - The terminal as creative workspace: navigating the command line for humanists
+- Opening a repository in the terminal with GitHub Desktop and launching `claude`
 - Running terminal commands from within Claude: how the agent executes bash, installs packages, and interacts with your file system — and when to let it vs. when to intervene
 - Slash commands: built-in commands (`/help`, `/init`, `/clear`, `/compact`) and how they structure your workflow ([Claude Code CLI reference](https://docs.anthropic.com/en/docs/claude-code))
-- Building a custom slash command: creating `.claude/commands/` files as reusable prompt templates for your own research workflows ([Custom slash commands guide](https://code.claude.com/docs/en/skills))
-- Demo: setting up a project from scratch with Claude Code, including writing a custom slash command
+- Demo: setting up a project from scratch with Claude Code and running an end-to-end task — describing and renaming a set of images, then building a slideshow from them ([Image Metadata with Claude Code]({{ '/image-metadata.html' | relative_url }}))
 
-**Exercise:** Initialize a new project with Claude Code. Create a custom slash command for a task you repeat often (e.g., `/analyze-text`, `/format-citations`, `/summarize-source`). Use Claude Code to scaffold a basic tool.
+**Exercise:** Following the [Image Metadata with Claude Code]({{ '/image-metadata.html' | relative_url }}) demo, gather a set of images you have rights to (personal photographs, public domain, or Creative Commons), create a new repository with GitHub Desktop, and run `claude` to generate descriptive alt text, rename the files to match their contents, and build a slideshow presenting them.
 
 </div>
 </details>
@@ -349,6 +356,7 @@ Complete these before the first session. They provide the conceptual framework w
 
 #### Digital Humanities and AI Pedagogy
 
+- Modern Language Association. ["AI and the Humanities: A Framework for Language and Literary Scholarship."](https://mlaai.hcommons.org/ai-and-the-humanities-a-framework-for-language-and-literary-scholarship/) *MLA Humanities Commons*.
 - Salter, Anastasia & John Murray. [DHSI 2025: DH Programming Pedagogy in the Age of AI](https://anastasiasalter.net/DHProgramming/) (previous iteration)
 - Salter, Anastasia & Lai-Tze Fan. [Distant Coding for the Digital Humanities](https://anastasiasalter.net/DistantCoding/) (MLA 2026)
 - Johnson, Emily K. & Anastasia Salter. [*Critical Making in the Age of AI*](https://github.com/amsucf/CritMakingAgeOfAI) (companion resources)

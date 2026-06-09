@@ -2,10 +2,13 @@
   :root:not([data-theme="dark"]) {
     --bg: #f8f9fa;
     --text: #2d3748;
-    --prompt: #b8734a;
+    --prompt: #9a5a2c;
     --output: #2b6cb0;
-    --accent: #6b46c1;
-    --muted: rgba(45, 55, 72, 0.15);
+    --accent: #5b3aa8;
+    --muted: rgba(45, 55, 72, 0.18);
+    --border: rgba(45, 55, 72, 0.42);
+    --surface: rgba(45, 55, 72, 0.035);
+    --surface-hover: rgba(45, 55, 72, 0.07);
     --code-bg: #edf2f7;
   }
 }
