@@ -117,7 +117,7 @@ Complete these before the first session. They provide the conceptual framework w
 - Agentic development: plan mode, `/init`, and iterating with an agent that edits real files
 - Discussion: the spectrum from chat to code — when do you need each tool?
 
-The capstone exercise that builds on these demos — [Agentic Code with Claude Code for Web]({{ '/final-exercise.html' | relative_url }}) — opens Day 2, so we can pick it up fresh with full time to plan, build, and deploy.
+The capstone that builds on these demos — [Agentic Code with Claude Code for Web]({{ '/final-exercise.html' | relative_url }}) — opens Day 2, where we'll walk through it together with full time to plan, build, and deploy.
 
 </div>
 </details>
@@ -131,7 +131,7 @@ The capstone exercise that builds on these demos — [Agentic Code with Claude C
 <div class="accordion-content" markdown="1">
 <span class="session-title">Session 3: Claude Code CLI — Setup and First Principles</span>
 
-**Opening exercise:** We begin Day 2 by completing the Day 1 capstone we didn't reach — [Agentic Code with Claude Code for Web]({{ '/final-exercise.html' | relative_url }}). On your own, plan, build, and deploy an ambitious public-facing site to GitHub Pages, working agentically with Claude Code (plan mode → iterate → deploy). Then we move to the CLI.
+**Opening walkthrough:** We begin Day 2 by working through the Day 1 capstone we didn't reach — [Agentic Code with Claude Code for Web]({{ '/final-exercise.html' | relative_url }}) — *together, as a group*. We'll plan, build, and deploy an ambitious public-facing site to GitHub Pages, working agentically with Claude Code (plan mode → iterate → deploy), so everyone has the moves before moving to the CLI.
 
 **Readings:**
 

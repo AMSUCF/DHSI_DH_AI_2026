@@ -94,7 +94,7 @@ Complete these before the first session. They provide the conceptual framework w
 - Willison, Simon. ["Writing Code Is Cheap Now"](https://simonwillison.net/guides/agentic-engineering-patterns/) (Chapter from *Agentic Engineering Patterns*).
 - Babich, Nick. ["7 Essential Claude Code Slash Commands."](https://uxplanet.org/7-advanced-claude-code-slash-commands-db4c9be3e38c) *UX Planet*. March 2026.
 
-**Opening exercise:** We begin Day 2 by completing the Day 1 capstone we didn't reach: on your own, use Claude Code for Web to plan, build, and deploy an ambitious public-facing site to GitHub Pages, working agentically (plan mode → iterate → deploy). Then we move to the CLI.
+**Opening walkthrough:** We begin Day 2 by working through the Day 1 capstone we didn't reach, together as a group: using Claude Code for Web to plan, build, and deploy an ambitious public-facing site to GitHub Pages, working agentically (plan mode → iterate → deploy). Then we move to the CLI.
 
 **Sample exercises:** [Distant Coding with Claude Code (UMKC)](https://anastasiasalter.net/DistantCodingUMKC/) — a collection of starting points to draw from.
 
