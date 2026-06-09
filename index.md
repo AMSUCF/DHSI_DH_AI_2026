@@ -141,7 +141,7 @@ The capstone that builds on these demos — [Agentic Code with Claude Code for W
 **Demos:**
 
 - [Distant Coding with Claude Code (UMKC)](https://anastasiasalter.net/DistantCodingUMKC/) — a collection of sample exercises to draw from as we move to the CLI
-- [Image Metadata with Claude Code]({{ '/image-metadata.html' | relative_url }}) — analyzing, describing, renaming, and presenting a set of images from the terminal
+- [Image Metadata with Claude Code]({{ '/image-metadata.html' | relative_url }}) — setting up a project from scratch and running an end-to-end task from the terminal: identifying, describing, and renaming a set of images, then building a slideshow from them
 
 **Topics:**
 
@@ -150,7 +150,6 @@ The capstone that builds on these demos — [Agentic Code with Claude Code for W
 - Opening a repository in the terminal with GitHub Desktop and launching `claude`
 - Running terminal commands from within Claude: how the agent executes bash, installs packages, and interacts with your file system — and when to let it vs. when to intervene
 - Slash commands: built-in commands (`/help`, `/init`, `/clear`, `/compact`) and how they structure your workflow ([Claude Code CLI reference](https://docs.anthropic.com/en/docs/claude-code))
-- Demo: setting up a project from scratch with Claude Code and running an end-to-end task — describing and renaming a set of images, then building a slideshow from them ([Image Metadata with Claude Code]({{ '/image-metadata.html' | relative_url }}))
 
 **Exercise:** Following the [Image Metadata with Claude Code]({{ '/image-metadata.html' | relative_url }}) demo, gather a set of images you have rights to (personal photographs, public domain, or Creative Commons), create a new repository with GitHub Desktop, and run `claude` to generate descriptive alt text, rename the files to match their contents, and build a slideshow presenting them.
 
@@ -172,6 +171,10 @@ The capstone that builds on these demos — [Agentic Code with Claude Code for W
 - Willison, Simon. ["Hoard Things You Know How to Do."](https://simonwillison.net/guides/agentic-engineering-patterns/) (Chapter from *Agentic Engineering Patterns*).
 - Willison, Simon (with Grace Huckins). ["How to Run an LLM on Your Laptop."](https://simonwillison.net/2025/Jul/18/how-to-run-an-llm-on-your-laptop/) *MIT Technology Review*. July 17, 2025.
 
+**Demo:**
+
+- Setting up Ollama, running a local model, and connecting it to Claude Code for a text analysis task
+
 **Topics:**
 
 - Context engineering: CLAUDE.md files, project memory, and teaching the agent about your work
@@ -180,7 +183,6 @@ The capstone that builds on these demos — [Agentic Code with Claude Code for W
 - Installing and configuring Ollama: pulling models, understanding model sizes and hardware requirements
 - Connecting Ollama to Claude Code: using `ollama launch claude` and environment variable configuration ([Ollama integration guide](https://docs.ollama.com/integrations/claude-code))
 - When to use local vs. cloud models: the tradeoffs for humanities researchers
-- Demo: setting up Ollama, running a local model, and connecting it to Claude Code for a text analysis task
 
 **Exercise:** Write a CLAUDE.md file that describes your research domain and goals. Install Ollama and pull a small model (e.g., Llama 3.2 3B or Qwen 3). Connect it to Claude Code and compare the experience of working with a local model vs. Claude for a simple task.
 
