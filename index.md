@@ -131,9 +131,13 @@ The capstone that builds on these demos — [Agentic Code with Claude Code for W
   <span class="indicator"><span class="plus">[+]</span><span class="minus">[-]</span></span>
 </summary>
 <div class="accordion-content" markdown="1">
-<span class="session-title">Session 3: Claude Code CLI — Setup and First Principles</span>
+<span class="session-title">Session 3: Claude Code on the Web — Building and Deploying in the Browser</span>
 
-**Opening walkthrough:** We begin Day 2 by working through the Day 1 capstone we didn't reach — [Agentic Code with Claude Code for Web]({{ '/final-exercise.html' | relative_url }}) — *together, as a group*. We'll plan, build, and deploy an ambitious public-facing site to GitHub Pages, working agentically with Claude Code (plan mode → iterate → deploy), so everyone has the moves before moving to the CLI.
+**Note on the live session:** We didn't reach the Claude Code CLI this morning — we worked in **Claude Code Web** instead, building and deploying agentically straight from the browser with no local setup. The Claude Code CLI overview has moved to **Day 3 AM**. One heads-up from class: there is currently a bug in Claude Code Web's **GitHub connector** that requires setting up a **personal access token (PAT)** to connect your repositories. Generate a token in GitHub (Settings → Developer settings → Personal access tokens) with repo access and use it when prompted to authorize the connection.
+
+**Opening walkthrough:** We work through the Day 1 capstone we didn't reach — [Agentic Code with Claude Code for Web]({{ '/final-exercise.html' | relative_url }}) — *together, as a group*. We plan, build, and deploy an ambitious public-facing site to GitHub Pages, working agentically with Claude Code Web (plan mode → iterate → deploy), so everyone has the moves down.
+
+**Session recap:** [Day 2 AM Recap — Building and Deploying with Claude Code Web]({{ '/day2-am-recap.html' | relative_url }})
 
 **Readings:**
 
@@ -142,16 +146,16 @@ The capstone that builds on these demos — [Agentic Code with Claude Code for W
 
 **Demos:**
 
-- [Distant Coding with Claude Code (UMKC)](https://anastasiasalter.net/DistantCodingUMKC/) — a collection of sample exercises to draw from as we move to the CLI
-- [Image Metadata with Claude Code]({{ '/image-metadata.html' | relative_url }}) — setting up a project from scratch and running an end-to-end task from the terminal: identifying, describing, and renaming a set of images, then building a slideshow from them
+- [Distant Coding with Claude Code (UMKC)](https://anastasiasalter.net/DistantCodingUMKC/) — a collection of sample exercises to draw from
+- [Image Metadata with Claude Code]({{ '/image-metadata.html' | relative_url }}) — setting up a project from scratch and running an end-to-end task: identifying, describing, and renaming a set of images, then building a slideshow from them
 
 **Topics:**
 
-- Installing and configuring Claude Code CLI
-- The terminal as creative workspace: navigating the command line for humanists
-- Opening a repository in the terminal with GitHub Desktop and launching `claude`
-- Running terminal commands from within Claude: how the agent executes bash, installs packages, and interacts with your file system — and when to let it vs. when to intervene
-- Slash commands: built-in commands (`/help`, `/init`, `/clear`, `/compact`) and how they structure your workflow ([Claude Code CLI reference](https://docs.anthropic.com/en/docs/claude-code))
+- Claude Code Web: building and deploying from the browser with no local install
+- Connecting GitHub: repositories, and the personal access token workaround for the current connector bug
+- Agentic development in the browser: plan mode, iterating with the agent that edits real files, and deploying to GitHub Pages
+- Working through the capstone together: planning, building, and shipping an ambitious public-facing site
+- Discussion: what the browser-based workflow makes easy, and what we'll gain by moving to the CLI on Day 3
 
 **Exercise:** Following the [Image Metadata with Claude Code]({{ '/image-metadata.html' | relative_url }}) demo, gather a set of images you have rights to (personal photographs, public domain, or Creative Commons), create a new repository with GitHub Desktop, and run `claude` to generate descriptive alt text, rename the files to match their contents, and build a slideshow presenting them.
 
@@ -166,6 +170,8 @@ The capstone that builds on these demos — [Agentic Code with Claude Code for W
 </summary>
 <div class="accordion-content" markdown="1">
 <span class="session-title">Session 4: Context Engineering and Local Models</span>
+
+**Session recap:** [Day 2 PM Recap — Ethics, Labor, and the Economics of Local Models]({{ '/day2-pm-recap.html' | relative_url }})
 
 **Readings:**
 
@@ -186,7 +192,7 @@ The capstone that builds on these demos — [Agentic Code with Claude Code for W
 - Connecting Ollama to Claude Code: using `ollama launch claude` and environment variable configuration ([Ollama integration guide](https://docs.ollama.com/integrations/claude-code))
 - When to use local vs. cloud models: the tradeoffs for humanities researchers
 
-**Exercise:** Write a CLAUDE.md file that describes your research domain and goals. Install Ollama and pull a small model (e.g., Llama 3.2 3B or Qwen 3). Connect it to Claude Code and compare the experience of working with a local model vs. Claude for a simple task.
+**Demo:** [Claude Fable Demo](https://github.com/AMSUCF/CommandLineDemo) — an educational game teaching the command line, inspired by *Carmen Sandiego*, generated from a one-sentence prompt ("make an educational game teaching the command line inspired by Carmen Sandiego") with today's launch of Fable.
 
 </div>
 </details>
@@ -198,7 +204,15 @@ The capstone that builds on these demos — [Agentic Code with Claude Code for W
   <span class="indicator"><span class="plus">[+]</span><span class="minus">[-]</span></span>
 </summary>
 <div class="accordion-content" markdown="1">
-<span class="session-title">Session 5: The Model Context Protocol</span>
+<span class="session-title">Session 5: The Claude Code CLI and the Model Context Protocol</span>
+
+**Claude Code CLI — Setup and First Principles:** We open Day 3 by moving from the browser to the terminal — installing the Claude Code CLI and working agentically from the command line (this overview moved here from Day 2 AM, where we worked in Claude Code Web instead).
+
+- Installing and configuring Claude Code CLI
+- The terminal as creative workspace: navigating the command line for humanists
+- Opening a repository in the terminal with GitHub Desktop and launching `claude`
+- Running terminal commands from within Claude: how the agent executes bash, installs packages, and interacts with your file system — and when to let it vs. when to intervene
+- Slash commands: built-in commands (`/help`, `/init`, `/clear`, `/compact`) and how they structure your workflow ([Claude Code CLI reference](https://docs.anthropic.com/en/docs/claude-code))
 
 **Readings:**
 
