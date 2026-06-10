@@ -217,6 +217,7 @@ The capstone that builds on these demos — [Agentic Code with Claude Code for W
 **Links**
 - [Homebrew](https://brew.sh/)
 - [GitHub CLI](https://cli.github.com/)
+- [Notebook MCP server]([https://cli.github.com/](https://github.com/lucidbard/notebook-mcp-server))
 
 **Readings:**
 
