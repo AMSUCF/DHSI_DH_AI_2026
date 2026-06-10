@@ -214,6 +214,10 @@ The capstone that builds on these demos — [Agentic Code with Claude Code for W
 - Running terminal commands from within Claude: how the agent executes bash, installs packages, and interacts with your file system — and when to let it vs. when to intervene
 - Slash commands: built-in commands (`/help`, `/init`, `/clear`, `/compact`) and how they structure your workflow ([Claude Code CLI reference](https://docs.anthropic.com/en/docs/claude-code))
 
+**Links**
+- [Homebrew](https://brew.sh/)
+- [GitHub CLI](https://cli.github.com/)
+
 **Readings:**
 
 - Anthropic. ["Introduction to Model Context Protocol."](https://docs.anthropic.com/en/docs/build-with-claude/mcp) Anthropic Documentation.
