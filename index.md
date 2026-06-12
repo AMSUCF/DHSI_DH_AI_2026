@@ -4,6 +4,37 @@ layout: default
 
 <details class="accordion-section" open>
 <summary>
+  <span class="prompt-text">$ student-projects --showcase</span>
+  <span class="leader"></span>
+  <span class="indicator"><span class="plus">[+]</span><span class="minus">[-]</span></span>
+</summary>
+<div class="accordion-content" markdown="1">
+
+What the 2026 cohort shipped in one week — most participants starting with little or no coding experience. First, the week in two minutes and forty-five seconds: an affectionately chaotic recap video (terminal aesthetic, robot voices, and the mid-class launch of Fable 5, exactly as we lived it). Captions included.
+
+<video controls preload="metadata" style="width:100%; border-radius:8px; background:#191724;" aria-label="DHSI 2026 recap video: Agentic Coding for the Humanities, the week in 2 minutes 45 seconds">
+  <source src="{{ '/assets/video/dhsi-2026-recap.mp4' | relative_url }}" type="video/mp4">
+  <track kind="captions" src="{{ '/assets/video/dhsi-2026-recap.vtt' | relative_url }}" srclang="en" label="English" default>
+  Your browser does not support embedded video. <a href="{{ '/assets/video/dhsi-2026-recap.mp4' | relative_url }}">Download the recap video (MP4, 26 MB)</a>.
+</video>
+
+**Demo Day projects** — all live, all built during the workshop:
+
+- [btscan](https://dorothyk98.github.io/dhsi/btscan/) — a minimal Bluetooth Low Energy scanner: who's broadcasting in this room? Surveillance, made visible.
+- [Evil I](https://hilaryhavens.github.io/EvilI/) — detecting unreliable first-person narrators in eighteenth-century British texts, entirely in the browser.
+- [Penny Runner](https://kgerbner.github.io/Puppy-Runner/) — a very good dog adventure (pixel platformer).
+- [UMN Ed Tech Transparency Project](https://kgerbner.github.io/UMNEdTech/index.html) — what are the rules for AI and technology on campus? Every answer links to a verified source.
+- [Smash the Patriarchy](https://rawreader.github.io/smash-the-patriarchy/) — each monster is a word; break the word and it shatters into the smaller things that made it.
+- [Feminist Theory into Practice](https://rawreader.github.io/Feminist-theory-to-Practice-Problems/) — name a problem of gender inequality, get back one real thing people have built to confront it.
+- [Building a Local Patent Database](https://pcdevill.github.io/DHSI_Project_PatentDatabase/) — 12M+ patents from public-domain sources, running entirely on your own machine.
+- [Archive Prep Tools](https://chesleyperry.github.io/archive-prep-tools/) — a local suite for preparing audiovisual and tabular archive materials; no audio or data leaves your Mac.
+- [Pixel's Code Quest](https://mariamyi.github.io/dhsi/) — learn Python alongside a cat in the browser, powered by Pyodide.
+
+</div>
+</details>
+
+<details class="accordion-section">
+<summary>
   <span class="prompt-text">$ course --description</span>
   <span class="leader"></span>
   <span class="indicator"><span class="plus">[+]</span><span class="minus">[-]</span></span>
