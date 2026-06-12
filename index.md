@@ -29,6 +29,7 @@ What the 2026 cohort shipped in one week — most participants starting with lit
 - [Building a Local Patent Database](https://pcdevill.github.io/DHSI_Project_PatentDatabase/) — 12M+ patents from public-domain sources, running entirely on your own machine.
 - [Archive Prep Tools](https://chesleyperry.github.io/archive-prep-tools/) — a local suite for preparing audiovisual and tabular archive materials; no audio or data leaves your Mac.
 - [Pixel's Code Quest](https://mariamyi.github.io/dhsi/) — learn Python alongside a cat in the browser, powered by Pyodide.
+- [CMA Education Search](https://shelleyerose.github.io/cma-education-search/) — type a topic or paste curriculum language and get Cleveland Museum of Art artworks aligned to Ohio social studies standards, each with the connection explained.
 
 </div>
 </details>
