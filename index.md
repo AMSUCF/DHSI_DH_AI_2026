@@ -66,6 +66,8 @@ Complete these before the first session. They provide the conceptual framework w
 <div class="accordion-content" markdown="1">
 <span class="session-title">Session 1: Positioning and Prototyping with Artifacts</span>
 
+**Session recap:** [Day 1 AM Recap — Why Agentic Tools, Not Chatbots]({{ '/day1-am-recap.html' | relative_url }})
+
 **Slides:** [Introduction — Pragmatic Agentic AI in the Digital Humanities]({{ '/intro.html' | relative_url }})
 
 **Demo:** [Distant Reading with Claude Projects]({{ '/distant-reading.html' | relative_url }})

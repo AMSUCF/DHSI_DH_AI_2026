@@ -8,3 +8,4 @@ dhsi-2026-course-packet.docx
 *.docx
 # Session recording caption/transcript files
 *.vtt
+transcript.txt
