@@ -9,7 +9,7 @@ title: "Day 2 PM Recap: Ethics, Labor, and the Economics of Local Models"
 
 <p class="page-lead" markdown="1">Where Day 1 PM was tool-driven, this session was deliberately <strong>conceptual</strong> — grounding the week's technical work in the ethics of AI use, the labor and pedagogy stakes, and the political economy of frontier models. The argument it builds toward: <strong>safety controls depend on closed weights</strong>, which is precisely why a humanist might want <strong>local, open-weight models</strong> they fully control. That argument is the bridge into the Ollama tutorial that closed the afternoon.</p>
 
-A note on coverage: much of this session was **discussion and context-setting rather than hands-on demos** — the instructor noted he had "taken us completely off agenda." The recap below follows the discussion and the model-release walkthrough; the hands-on Ollama setup (installing a local model and connecting it to Claude Code) happened after, off-recording.
+A note on coverage: the first half of this session was **discussion and context-setting** — the instructor noted he had "taken us completely off agenda" — before the class turned back to **hands-on setup**: installing Git, pulling a first local model with Ollama, and getting Claude Code running for the first time, all under the live chaos of a frontier-model launch. The recap below follows the discussion and model-release walkthrough first, then the hands-on segment that closed the afternoon.
 
 ### MLA case studies — AI, IP, and human-centered expertise
 
@@ -41,10 +41,38 @@ A major model release dropped over lunch and was walked through as a live exampl
 - **Harness steering.** Anthropic's installed harness gets a token discount versus Claude Code Web, on the theory that cloud compute for Code Web costs Anthropic more than running on the user's own machine — a reason to suspect Code Web is being deliberately deprioritized.
 - **Practical takeaway (the segue to local models).** Don't use the frontier model for everything — use it to **orchestrate**, reserve it for hard problems, and push **grunt work** (assembling HTML, routine conversions) onto cheaper or **local** models.
 
-### Lead-in to the local-models tutorial
+### Back to tutorial mode — and a direct answer on safety
 
-As the class transitioned back to tutorial mode, the recurring anxiety — *if I let AI onto my computer, can it read or delete everything?* — got a direct answer: the Claude Code CLI follows the **principle of least access**, with heavy **sandboxing** scoped to a piece of the file system rather than the whole machine. The caveat: third-party harnesses strip those safety features — full power, full risk. From there the class moved into installing Git and setting up Ollama (covered in the Day 2 PM demo materials).
+As the class transitioned to hands-on work, the recurring anxiety — *if I let AI onto my computer, can it read or delete everything?* — got a direct answer: the Claude Code CLI follows the **principle of least access**, with heavy **sandboxing** scoped to a piece of the file system rather than the whole machine. The caveat: third-party harnesses strip those safety features — full power, full risk (*"if you hook up OpenClaw to it, all bets are off"*).
+
+### Git — a time machine for your agents
+
+The hands-on portion opened on **Git**, framed through **Simon Willison** (praised as an "outsider" educator whose *Agentic Engineering Patterns* guide carries "a lot of real craft knowledge"). The core idea: **"Git is basically a time machine for your agents"** — it lets you run in **YOLO mode** without fearing "the blast radius," because even a deleted codebase is recoverable. A useful distinction landed here: **Git ≠ GitHub** — *"GitHub is kind of like Facebook, whereas Git itself is kind of like a local program that can talk to Facebook."* You can run Git entirely locally and never touch GitHub, which matters for private or sensitive data. The pedagogical goal is the **mental model**, not the commands — so that when an agent hits a "force push" or "diverging branches," you can actually converse about it instead of it being "all Greek."
+
+A sharp tangent on **prompt injection** illustrated why agents need guardrails: instructions hidden in web pages or documents (academics burying white-on-white text to manipulate AI peer reviewers; instructors planting hidden prompts in assignments to catch AI-assisted cheating) can hijack an agent that ingests them.
+
+### First contact with Ollama and local models
+
+The class then met **Ollama** — *"the easiest way to build with open models,"* a desktop app plus a searchable model catalog at **ollama.com**. The model theory, kept concrete:
+
+- **Parameters** are "a set of numbers" (DevStral = 24B); bigger usually means more capable. **Mixture-of-Experts** means only a fraction is active at once. **Gemma "E2B/E4B"** = *effectively* 2 or 4 billion — small enough to run on a phone.
+- **Hardware guidance:** aim for **≤20B parameters** (closer to 5–10B for good performance on a laptop); bigger models need NVIDIA cards or, at the top end, data-center hardware. The shortcut: **ask Claude "what models would run on my hardware?"** with your specs.
+- A safety flag: a **cloud icon** next to a model means it runs on Ollama's *paid servers*, not locally.
+
+Everyone ran **`ollama pull`** to download a first model — **Gemma 4 E2B** (~7.2 GB, multimodal/vision-capable) — seeding the week's payoff: soon you can have a **local AI critique writing that never leaves your computer.**
+
+### The Fable launch, live — and an overnight plan
+
+Setup ran straight into history: Anthropic launched its frontier **Fable** model *mid-session*, and *"everyone in the world now is updating their Claude Code."* Between Anthropic's melting servers and the whole room downloading Ollama models on one Wi-Fi router, installs crawled. The pragmatic call: **Ctrl-C** the model downloads (taught as "the universal command to stop or exit a program"), focus on getting **Claude Code** installed, and **download the local models overnight** on hotel internet. A recurring point of confusion got named here too: **Claude Desktop ≠ the Claude Code CLI** — installing the app doesn't give you the command.
+
+Anastasia gave a quick tour of the broader **Claude ecosystem** — the Desktop app, the **Co-work** entry point for non-programmers (works "in any folder," keeps data local; real examples: DocX→Markdown conversion via **Pandoc**, pulling old citations into **BibTeX**, fixing course-caption author names by having it read the video and syllabus in the same folder), and the "weird hybrid" desktop Claude Code interface she "never uses" because *"it's not as powerful or flexible as the command line tool."* She also flagged **Fable's token cost**: the **1M-context** version re-reads accumulating context every turn and burns tokens fast, and **fast mode** is "twice as fast but cost twice as much."
+
+To show what the new model could do, Fable built — from a one-sentence prompt, in about 18 minutes — a working **command-line-based educational game inspired by *Carmen Sandiego*** (the [Claude Fable Demo](https://github.com/AMSUCF/CommandLineDemo) linked from the schedule), with a live preview and a plan to publish it on GitHub Pages. *"So this is how you learn the command line."*
+
+### The payoff — and the catch — of a local model in the harness
+
+A final teaser pointed at the rest of the week. A tiny local model (**DeepCoder 1.5B**) visibly "thought out loud" before answering — illustrating **chain-of-thought** ("it actually performs better by trying to verbalize… rather than one-shot it"). But dropped into the Claude Code harness, it **failed to write a file** — it only printed instructions, because small models must be specifically *trained to use tools*. The metaphor stuck: **"even though Claude Code was able to put the LLM in the engine, the LLM didn't know how to press the gas."** The command that makes the swap possible — **`ollama launch claude`**, driving the Claude Code harness with a local model — was previewed, with **Ollama positioning itself as "the lingua franca of the harnesses and the models."** The homework: download a working set overnight (**Gemma 4 E2B** for vision, **Qwen 2.5 Coder** for code, a general model for text) so Day 3 can start with the engines already in the garage.
 
 ---
 
-**Through-line of the session:** the afternoon grounded the week's technical work in the ethics of IP and disclosure, the labor and pedagogy stakes of agentic AI, and the political economy of frontier models — arriving at the case for **local, open-weight models** a humanist can fully control. That argument is the bridge into the Ollama work and the rest of the week.
+**Through-line of the session:** the afternoon grounded the week's technical work in the ethics of IP and disclosure, the labor and pedagogy stakes of agentic AI, and the political economy of frontier models — arriving at the case for **local, open-weight models** a humanist can fully control — and then started building toward it: Git as a safety net, Ollama as the engine swap, and a first, imperfect taste of running your own model inside the agent. That argument, and that setup, are the bridge into the rest of the week.

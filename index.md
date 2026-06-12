@@ -206,6 +206,8 @@ The capstone that builds on these demos — [Agentic Code with Claude Code for W
 <div class="accordion-content" markdown="1">
 <span class="session-title">Session 5: The Claude Code CLI and the Model Context Protocol</span>
 
+**Session recap:** [Day 3 AM Recap — The Command Line and the Claude Code CLI]({{ '/day3-am-recap.html' | relative_url }})
+
 **Claude Code CLI — Setup and First Principles:** We open Day 3 by moving from the browser to the terminal — installing the Claude Code CLI and working agentically from the command line (this overview moved here from Day 2 AM, where we worked in Claude Code Web instead).
 
 - Installing and configuring Claude Code CLI
@@ -250,6 +252,8 @@ The capstone that builds on these demos — [Agentic Code with Claude Code for W
 <div class="accordion-content" markdown="1">
 <span class="session-title">Session 6: The Superpowers Workflow</span>
 
+**Session recap:** [Day 3 PM Recap — Local Models, MCP, and the Superpowers Workflow]({{ '/day3-pm-recap.html' | relative_url }})
+
 **Readings:**
 
 - Vincent, Jesse. ["Superpowers: How I'm Using Coding Agents in October 2025."](https://blog.fsck.com/2025/10/09/superpowers/) *blog.fsck.com*. October 9, 2025.
@@ -278,6 +282,8 @@ The capstone that builds on these demos — [Agentic Code with Claude Code for W
 <div class="accordion-content" markdown="1">
 <span class="session-title">Session 7: Building and Sharing Skills</span>
 
+**Session recap:** [Day 4 AM Recap — What You Still Need to Know: Verification, Trust, and Building Your Project]({{ '/day4-am-recap.html' | relative_url }})
+
 **Readings:**
 
 - Willison, Simon. ["2025: The Year in LLMs."](https://simonwillison.net) *simonwillison.net*. December 31, 2025.
@@ -304,6 +310,8 @@ The capstone that builds on these demos — [Agentic Code with Claude Code for W
 </summary>
 <div class="accordion-content" markdown="1">
 <span class="session-title">Session 8: Building Your Tool</span>
+
+**Session recap:** [Day 4 PM Recap — Power Tools for Building: VS Code, Sub-agents, and Remote Control]({{ '/day4-pm-recap.html' | relative_url }})
 
 **Readings:**
 

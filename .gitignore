@@ -4,3 +4,7 @@ _site/
 .superpowers/
 .sass-cache/
 MondayAMSource/
+dhsi-2026-course-packet.docx
+*.docx
+# Session recording caption/transcript files
+*.vtt
